@@ -10,7 +10,18 @@
 	<script>
 		function secondHighest(arr) {
 			//Write your code here
-			
+			let lar=-Infinity
+			let lar_2=-Infinity
+			for(let num of arr){
+				if(num>lar){
+					lar_2=lar
+					lar=num
+				}
+				else if(num>lar_2){
+					lar_2=num
+				}
+			}
+			return lar_2
 		}
 
 		function Main() {
